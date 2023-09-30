@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer App</title>
+</head>
+<body>
+    <section>
+        <h1>Multiple Timers App</h1>
+        <div class="box">
+            <form action="#">
+                Set Timer :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="datetime" id="hour" placeholder="hh"  autocomplete="off" value="">
+                : <input type="datetime" id="min" placeholder="mm" autocomplete="off" value="">
+                : <input type="datetime" id="sec" placeholder="ss" autocomplete="off" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="set" onclick="settimer()">Set</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <h4>Current Timers</h4>
+        <div class="info">You have no timers currently!</div>
+        <div class="box2" display="none">
+            <div class="timers">
+                Time Left :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span id="thh"></span> 
+                : <span id="tmm"></span>
+                : <span id="tss"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="delete" onclick="deletetimer()">Delete</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="javas.js">
+    </script>
+</body>
+</html>
